@@ -1,4 +1,4 @@
-# DOCX-19
+# PyDOCX-19
 
 Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da região e normalizalas para um formato do tipo JSON
 
@@ -7,7 +7,7 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi�
 ## Install
 
 ```
-$ git clone blabla
+$ git clone https://github.com/deividdotum/pydocx-19.git
 ```
 ## Configuração
 
