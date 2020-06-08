@@ -77,15 +77,9 @@ def removeAcentos(txt):
 
 
 def convert():
+    print("Generated ok")
+    return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
 
-
-<< << << < HEAD
-print("Generated ok")
-return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
-
-== == == =
-print("Generated ok")
-return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
->>>>>> > e88a3b2b98f9d25cc3ced424481235b74530cc3d
 
 main()
+convert()
