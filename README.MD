@@ -7,6 +7,7 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi�
 ## Install
 
 ```
+$ pip install docx2txt
 $ git clone https://github.com/deividdotum/pydocx-19.git
 ```
 ## Configuração
