@@ -58,21 +58,21 @@ schemas = {
         "tipo": r'data\sdo\sinicio\sdo\stratamento\s+?\[(.+)\]',
         "data_inicio_tratamento": r'data\sdo\sinicio\sdo\stratamento\s+?\[.+?\].+\n+(\d{2}\/\d{2}\/\d{2,4})'
     },
-    "investigacao_diagnostica": {
-        "RT-PCR_SARS-CoV-2": {
-            "data": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
-            "por": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
-        },
-        "teste_rapido_Igm_Igg": {
-            "data": r'teste\srapido\sigm\/igg\s+\s\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
-            "por": r'teste\srapido\sigm\/igg\s+\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
-        },
-        "outras": {
-            "descricao": r'outro(.+)data:',
-            "data": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}',
-            "por": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s(.+)'
-        },
-    },
+    # "investigacao_diagnostica": {
+    #     "RT-PCR_SARS-CoV-2": {
+    #         "data": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
+    #         "por": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
+    #     },
+    #     "teste_rapido_Igm_Igg": {
+    #         "data": r'teste\srapido\sigm\/igg\s+\s\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
+    #         "por": r'teste\srapido\sigm\/igg\s+\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
+    #     },
+    #     "outras": {
+    #         "descricao": r'outro(.+)data:',
+    #         "data": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}',
+    #         "por": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s(.+)'
+    #     },
+    # },
     "data_conclusao": r'conclusao\s+(\d{2}\/\d{2}\/\d{2,4})',
     "diagnostico": r'diagnostico\s+(\w+)',
     "cura": r'evolucao\s+\((.+)\)cura',

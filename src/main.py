@@ -2,8 +2,12 @@ from unicodedata import normalize
 import docx2txt
 import re
 import json
+import pandas as pd
 from os import listdir
 from schema import schemas
+
+
+DEBUG = False
 
 
 def main():
@@ -20,12 +24,15 @@ def main():
         text = text.lower()
         text = removeAcentos(text)
 
-        fileTxt = open("output-temp.txt", "w")
-        fileTxt.write(text)
-        fileTxt.close()
+        if(DEBUG):
+            fileTxt = open("output-temp.txt", "w")
+            fileTxt.write(text)
+            fileTxt.close()
 
         jsonDict = {}
         for key in schemas.keys():
+            if(DEBUG and key):
+                print("key", key)
             data = schemas.get(key)
             jsonDict[key] = recurseveMap(None, data, text, jsonDict)
         docsJson.append(jsonDict)
@@ -39,6 +46,8 @@ def main():
 
 
 def recurseveMap(key, data, text, jsonDict):
+    if(DEBUG and key):
+        print("key", key)
     if(jsonDict):
         jsonDict = {}
     value = None
@@ -65,4 +74,10 @@ def removeAcentos(txt):
     return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('ASCII')
 
 
+def convert():
+    print("Generated ok")
+    return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
+
+
 main()
+convert()

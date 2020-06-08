@@ -8,7 +8,10 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi√
 
 ```
 $ pip install docx2txt
+$ pip install pandas
+$ pip install openpyxl
 $ git clone https://github.com/deividdotum/pydocx-19.git
+$ python3 src/main.py
 ```
 
 ## Docker
