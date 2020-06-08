@@ -10,6 +10,13 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi�
 $ pip install docx2txt
 $ git clone https://github.com/deividdotum/pydocx-19.git
 ```
+
+## Docker
+
+```
+$ docker build -t pydocx-19
+$ docker run pydocx-19
+```
 ## Configuração
 
 - O script le todos os arquivos presentes na pasta /assets que deve ser criada na raiz do projeto
