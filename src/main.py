@@ -27,7 +27,7 @@ def main():
 
     jsonTxt = json.dumps(docsJson, indent=4)
 
-    outputFile = open("output.json", "w")
+    outputFile = open("output/output.json", "w")
     outputFile.write(jsonTxt)
     outputFile.close()
     print("\n[DONE]")
