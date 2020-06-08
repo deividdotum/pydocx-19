@@ -1,0 +1,355 @@
+prefeitura municipal de cacoal                                                                                                            secretaria municipal de saude 
+
+
+
+
+
+susp covid-19 em 
+
+notificacao e monitoramento de caso suspeito de covid-19  
+
+ficha  no ______________________
+
+definicao de caso suspeito covid-19
+
+( 1  ) caso 01:sindrome gripal (sg): individuo com febre, mesmo que referida, acompanhada de tosse ou dor de garganta e com inicio do sintomas nos ultimos 7 dias.
+
+( 2  ) caso 02: sindrome respiratoria aguda grave (srag): sindrome gripal  que agravou e apresente  dispneia, desconforto respiratorio ou pressao persistente no torax ou saturacao de o2 menor que 95% em ar ambiente ou cianose.em criancas observar:batimentos de asa de nariz, cianose, tiragem intercostal, desidratacao e inapetencia.
+
+
+
+
+
+unidade de saude: unidade de saude 1 data da notif: 10/04/2020
+
+nome do paciente: pedro das neves alencar cpf:02571358477
+
+idade: 50    data de nascimento: 05/05/1970               sexo [   1   ]1.masculino   2.feminino 
+
+gestante [   1  ] 1.1o trimestre  2.2o trimestre   3.3o trimestre   4.idade gest. ign   5.nao   6.nao se aplica   9.ignorado
+
+raca/cor [   3  ] 1. branca           2. negra              3. amarela        4. parda     5. indigena: etnia __________________
+
+escolaridade [  0   ] 0. analfabeto   1.1a a 5a serie  2.6a a 9a serie   3. medio (1o ao 3o ano)  4. superior   5.nao se aplica 
+
+ocupacao: desempregado cns:000000000000
+
+nome da mae: maria dos santos neves
+
+
+
+endereco:  municipio: cacoal estado: rondonia bairro:  centro  rua neves codensa no  50746       zona [    1 ] 1.urbana 2. rural                                                  telefone: 0545446479 complemento: s/c
+
+paciente trabalha ou tem contato com aves ou suinos [   2  ]   1. sim  2. nao   9. ignorado  
+
+data inicio dos sintomas:  10/04/2020  
+
+monitoramento diario ate 14 dias:  10/04/2020
+
+sinais e sintomas           1. sim    2. nao 
+
+ frequencia respiratoria  
+
+[  1   ] dor de garganta
+
+[     ]leve- abaixo de  20   irm  
+
+[   2  ] dispneia
+
+[   x  ]moderado -  com 20 a 24  irm
+
+[   1  ] febre     _________
+
+[     ]grave -           acima de 24  irm
+
+[   2  ] tosse        [   2  ]      seca [   1  ] produtiva
+
+
+
+[   2  ] perda de olfato e paladar    
+
+
+
+[   1  ] dor de cabeca   [  1   ] dor no corpo        [   2  ] outros sintomas: __________________________________
+
+c
+
+fatores de risco                     1. sim    2. nao
+
+[  1  ]puerpera (ate 42 dias do parto
+
+[ 1   ]doencas cardiovascular cronica 
+
+[   1  ]pneumopatia cronica
+
+[  2  ]sindrome de down
+
+[ 1   ]doenca hepatica cronica 
+
+[   1  ]obesidade imc ______
+
+[  2  ]diabetes mellitus 
+
+[  2  ]doenca neurologica cronica 
+
+[   2  ]outros _____________
+
+[  1  ]imunodeficiencia/imunodepressao
+
+[   2 ]doenca renal cronica 
+
+______________________
+
+
+
+recebeu vacina contra gripe            (ultimos 12 meses) 
+
+no doses
+
+data ultima dose
+
+          [  2  ]     1. sim       2. nao
+
+1
+
+01/05/2019
+
+]
+
+uso de antiviral        1. sim    2. nao 
+
+data do inicio do tratamento
+
+   [  2  ] 1. nao  2. oseltamivir   3 . zanamivir   4 . outro ______________      
+
+10/04/2020
+
+
+
+              investigacao diagnostica  
+
+ rt-pcr p/  sars-cov-2 data: 10/04/2020  por  manuel      (coleta do 3o ao 7o dia do inicio dos sintomas)   
+
+ teste rapido igm/igg   data: 10/04/2020  por  manuel  (ideal entre  8o e 10o dia do inicio dos sintomas)  
+
+ outro  outras...  data: 10/04/2020  por manuel 
+
+			
+
+conclusao  10/04/2020    diagnostico negativo           evolucao  (   )cura  (   )obito 
+
+disk covid cacoal: 3907-4092/99904-2201/99908-9426
+
+
+
+
+
+
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       xx resp. pela notificacao: _______________________
+
+
+
+importante: orientar e monitorar o paciente e familiares quanto ao isolamento domiciliar e  sinais de agravamento.
+
+dia 
+
+horario
+
+situacao do paciente e orientacoes
+
+resp
+
+1o
+
+10/04/20
+
+
+
+
+
+10:45:01
+
+
+
+adetrando na unidade com sitomas
+
+manuel
+
+2o
+
+11/04/20
+
+
+
+
+
+13:55:10
+
+
+
+voltou na unidade
+
+joaquina
+
+3o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+4o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+5o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+6o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+7o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+8o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+9o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+10o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+11o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+12o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+13o
+
+___/___/20
+
+
+
+
+
+
+
+
+
+
+
+14o
+
+___/___/20

@@ -17,7 +17,12 @@ def main():
         print(".", end="")
 
         text = docx2txt.process('assets/{}'.format(fileName))
+        text = text.lower()
         text = removeAcentos(text)
+
+        fileTxt = open("output-temp.txt", "w")
+        fileTxt.write(text)
+        fileTxt.close()
 
         jsonDict = {}
         for key in schemas.keys():

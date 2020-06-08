@@ -32,52 +32,52 @@ schemas = {
         'dor_no_corpo': r'cabeca\s+\[(.+)\]\s+?dor\sno\scorpo',
         'outros_sintomas': r'outros\ssintomas:\s+(.+)?',
     },
-    # "frequencia_respiratoria": {
-    #     "leve": r'',
-    #     "moderado": r'',
-    #     "grave": r''
-    # },
-    # "fatores_de_risco": {
-    #     "puerpera": r'',
-    #     "sindrome_de_down": r'',
-    #     "doenca_hepatica_cronica": r'',
-    #     "obesidade_imc": r'',
-    #     "diabetes_mellitus": r'',
-    #     "doenca_neurologica_cronica": r'',
-    #     "outros": r'',
-    #     "imunodeficiencia_imunodepressao": r'',
-    #     "doenca_renal_cronica": r'',
+    "frequencia_respiratoria": {
+        "leve": r'\[(.+)\]leve\s?-\s+abaixo\s+?de\s+?20\s+?irm',
+        "moderado": r'\[(.+)\]moderado',
+        "grave": r'\[(.+)\]grave'
+    },
+    "fatores_de_risco": {
+        "puerpera": r'\[(.+)\]puerpera',
+        "sindrome_de_down": r'\[(.+)\]sindrome\sde\sdown',
+        "doenca_hepatica_cronica": r'\[(.+)\]doenca\shepatica\scronica',
+        "obesidade_imc": r'\[.+\]obesidade\s+imc(.+)',
+        "diabetes_mellitus": r'\[(.+)\]diabetes\smellitus',
+        "doenca_neurologica_cronica": r'\[(.+)\]doenca\sneurologica\scronica',
+        "outros": r'outros\s(.+)',
+        "imunodeficiencia_imunodepressao": r'\[(.+)\]imunodeficiencia\/imunodepressao',
+        "doenca_renal_cronica": r'\[(.+)\]doenca\srenal\scronica',
 
-    # },
-    # "vacina_gripe": {
-    #     "recebeu_vacina": r'',
-    #     "dosesNum": r'',
-    #     "data_ultima_dose": r''
-    # },
-    # "antiviral": {
-    #     "tipo": r'',
-    #     "data_inicio_tratamento": r''
-    # },
-    # "investigacao_diagnostica": {
-    #     "RT-PCR_SARS-CoV-2": {
-    #         "data": r'',
-    #         "por": r''
-    #     },
-    #     "teste_rapido_Igm_Igg": {
-    #         "data": r'',
-    #         "por": r''
-    #     },
-    #     "outras": {
-    #         "descricao": r'',
-    #         "data": r'',
-    #         "por": r''
-    #     },
-    # },
-    # "data_conclusao": r'',
-    # "diagnostico": r'',
-    # "cura": r'',
-    # "obito": r'',
-    # "responsavel": r'',
+    },
+    "vacina_gripe": {
+        "recebeu_vacina": r'recebeu vacina contra gripe.+\n+?\s+?.+?\s+?\n+?.+?\s+?\[(.+)\]',
+        "dosesNum": r'recebeu vacina contra gripe.+\n+?\s+?.+?\s+?\n+?.+?\s+?.+\s+?\n+?(\d)',
+        "data_ultima_dose": r'recebeu vacina contra gripe.+\n+?\s+?.+?\s+?\n+?.+?\s+?.+\s+?\n+?\d?\s+?\n+?(\d{2}\/\d{2}\/\d{2,4})'
+    },
+    "antiviral": {
+        "tipo": r'data\sdo\sinicio\sdo\stratamento\s+?\[(.+)\]',
+        "data_inicio_tratamento": r'data\sdo\sinicio\sdo\stratamento\s+?\[.+?\].+\n+(\d{2}\/\d{2}\/\d{2,4})'
+    },
+    "investigacao_diagnostica": {
+        "RT-PCR_SARS-CoV-2": {
+            "data": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
+            "por": r'rt-pcr\sp\/\s+sars-cov-2\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
+        },
+        "teste_rapido_Igm_Igg": {
+            "data": r'teste\srapido\sigm\/igg\s+\s\sdata:\s(\d{2}\/\d{2}\/\d{2,4})',
+            "por": r'teste\srapido\sigm\/igg\s+\sdata:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s+(.+)\('
+        },
+        "outras": {
+            "descricao": r'outro(.+)data:',
+            "data": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}',
+            "por": r'outro.+data:\s\d{2}\/\d{2}\/\d{2,4}\s+por\s(.+)'
+        },
+    },
+    "data_conclusao": r'conclusao\s+(\d{2}\/\d{2}\/\d{2,4})',
+    "diagnostico": r'diagnostico\s+(\w+)',
+    "cura": r'evolucao\s+\((.+)\)cura',
+    "obito": r'evolucao\s+\(.+\)cura\s+\((.+)\)obito',
+    "responsavel": r'resp\.\spela\snotificacao:\s(.+)',
 
     'acompanhamento': {
         "regex": r'\do\s+\n.?(?P<data>\d{2}\/\d{2}\/\d{2,4})\n+?.?(?P<hora>\d{2}:\d{2}:\d{2})\n+?(?P<descricao>.+)\n+(?P<responsavel>.+)',
