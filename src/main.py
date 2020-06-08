@@ -2,6 +2,7 @@ from unicodedata import normalize
 import docx2txt
 import re
 import json
+import pandas as pd
 from os import listdir
 from schema import schemas
 
@@ -10,13 +11,13 @@ def main():
     print("DOCX-19")
 
     docsJson = []
-    fileList = listdir("assets")
+    fileList = listdir("../assets")
 
     print("Read {} Docs ".format(len(fileList)))
     for fileName in fileList:
         print(".", end="")
 
-        text = docx2txt.process('assets/{}'.format(fileName))
+        text = docx2txt.process('../assets/{}'.format(fileName))
         text = removeAcentos(text)
 
         jsonDict = {}
@@ -27,7 +28,7 @@ def main():
 
     jsonTxt = json.dumps(docsJson, indent=4)
 
-    outputFile = open("output/output.json", "w")
+    outputFile = open("../output/output.json", "w")
     outputFile.write(jsonTxt)
     outputFile.close()
     print("\n[DONE]")
@@ -59,5 +60,9 @@ def recurseveMap(key, data, text, jsonDict):
 def removeAcentos(txt):
     return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('ASCII')
 
+def convert():
+    print("Generated ok");
+    return pd.read_json("../output/output.json").to_excel("../sheet/plan1.xlsx");
 
 main()
+convert()
