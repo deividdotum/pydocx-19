@@ -11,13 +11,13 @@ def main():
     print("DOCX-19")
 
     docsJson = []
-    fileList = listdir("../assets")
+    fileList = listdir("assets")
 
     print("Read {} Docs ".format(len(fileList)))
     for fileName in fileList:
         print(".", end="")
 
-        text = docx2txt.process('../assets/{}'.format(fileName))
+        text = docx2txt.process('assets/{}'.format(fileName))
         text = removeAcentos(text)
 
         jsonDict = {}
@@ -28,9 +28,11 @@ def main():
 
     jsonTxt = json.dumps(docsJson, indent=4)
 
-    outputFile = open("../output/output.json", "w")
+    outputFile = open("output/output.json", "w")
     outputFile.write(jsonTxt)
     outputFile.close()
+    
+    convert()
     print("\n[DONE]")
 
 
@@ -62,7 +64,6 @@ def removeAcentos(txt):
 
 def convert():
     print("Generated ok");
-    return pd.read_json("../output/output.json").to_excel("../sheet/plan1.xlsx");
+    return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx");
 
 main()
-convert()
