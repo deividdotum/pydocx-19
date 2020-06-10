@@ -1,4 +1,4 @@
-# PyDOCX-19
+# PyDOCX-19 🐍 + 📂
 
 Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da região e normalizalas para um formato do tipo JSON
 
@@ -12,28 +12,28 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi�
 
 ### Em seu PC
 
-```
-$ pip install docx2txt
-$ pip install pandas
-$ pip install openpyxl
+```shell
 $ git clone https://github.com/deividdotum/pydocx-19.git
+$ pip3 install -r requirements.txt
+$ pip3 install pandas # Não funcionou para o raspibian
 $ python3 app/src/main.py
 ```
+> **Atenção** pode ser que no Arm (raspbarry...) não de para instalar o pandas entao tu faz assim `apt-get install python3-pandas`
 
 ### Docker
 
-```cmd
-# Build
+```shell
+# Construir
 $ docker build -t pydocx-19 .
 
-# RUN
+# Rodar
 $ docker run --rm -v $(pwd)/app:/src/pydocx-19 pydocx-19
 
-# INTERATIVO MODE
+# Modo interativo
 $ docker run -it --rm -v $(pwd)/app:/src/pydocx-19 pydocx-19 /bin/bash
 ```
 
-### Raspbarry PI (Docker / Raspibian)
+### Raspbarry PI (Docker + Raspbian)
 
 - No caso e o msm passo que esta na sessão Docker mas com as imagens em _arm32v7_
 pode ver la no `Dockerfile` que esta comentado, ai so descomentar e ser feliz

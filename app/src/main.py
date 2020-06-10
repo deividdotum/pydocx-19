@@ -1,12 +1,13 @@
 from unicodedata import normalize
+import time
 import docx2txt
 import re
 import json
-import pandas as pd
+# import pandas as pd
 from os import listdir
 from schema import schemas
 
-
+start_time = time.time()
 DEBUG = False
 
 
@@ -44,7 +45,6 @@ def main():
     outputFile.close()
 
     convert()
-    print("\n[DONE]")
 
 
 def recurseveMap(key, data, text, jsonDict):
@@ -78,8 +78,8 @@ def removeAcentos(txt):
 
 def convert():
     print("Generated ok")
-    return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
+    # return pd.read_json("output/output.json").to_excel("sheet/plan1.xlsx")
 
 
 main()
-convert()
+print("✨ Done in {:.3f} s".format(time.time() - start_time))
