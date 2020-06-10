@@ -10,7 +10,7 @@ Projeto com finalidade de ler um diretorio com as fichas sobre covid-19 da regi�
 
 ## Rodando Aplicação
 
-### Em seu PC
+### 💻 Em seu PC
 
 ```shell
 $ git clone https://github.com/deividdotum/pydocx-19.git
@@ -20,7 +20,7 @@ $ python3 app/src/main.py
 ```
 > **Atenção** pode ser que no Arm (raspbarry...) não de para instalar o pandas entao tu faz assim `apt-get install python3-pandas`
 
-### Docker
+### 🐋 Docker
 
 ```shell
 # Construir
@@ -33,7 +33,7 @@ $ docker run --rm -v $(pwd)/app:/src/pydocx-19 pydocx-19
 $ docker run -it --rm -v $(pwd)/app:/src/pydocx-19 pydocx-19 /bin/bash
 ```
 
-### Raspbarry PI (Docker + Raspbian)
+### 🫐 Raspbarry PI (Docker + Raspbian)
 
 - No caso e o msm passo que esta na sessão Docker mas com as imagens em _arm32v7_
 pode ver la no `Dockerfile` que esta comentado, ai so descomentar e ser feliz
