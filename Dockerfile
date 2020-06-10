@@ -1,11 +1,10 @@
-FROM python:3
+# FROM python:3
+FROM arm32v7/python:3
 
-COPY src /
+COPY /app /src/pydocx-19
 
-COPY assets /assets
 
-ADD output /output
-
-RUN pip install docx2txt
+RUN pip3 install pandas docx2txt openpyxl
+WORKDIR /src/pydocx-19
 
 CMD python ./src/main.py
